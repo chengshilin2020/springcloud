@@ -33,12 +33,12 @@ public class ConsumerController {
     
     
     
-    @Autowired
-    HelloRemote helloRemote;
-	
-    @RequestMapping("/hello/{name}")
-    public String index(@PathVariable("name") String name) {
-    	System.out.println("接受到请求参数:"+name+",进行转发到其他服务!");
-        return helloRemote.hello(name);
-    }
+//    @Autowired
+//    HelloRemote helloRemote;
+//
+//    @RequestMapping("/hello/{name}")
+//    public String index(@PathVariable("name") String name) {
+//    	System.out.println("接受到请求参数:"+name+",进行转发到其他服务!");
+//        return helloRemote.hello(name);
+//    }
 }
